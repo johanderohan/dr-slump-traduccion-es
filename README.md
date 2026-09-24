@@ -14,9 +14,8 @@ juego japonés, con sus dos pistas BIN y su archivo CUE.
 
 El guion se ha traducido y cotejado con el japonés mediante una segunda
 revisión, con una biblia de voces, tratamientos, nombres y términos. El índice
-contiene **5.125 cadenas distintas**, presentes en 80.324 registros físicos:
-5.037 textos revisados, 87 identificadores técnicos conservados y una adaptación
-contextual. No son 80.324 frases diferentes.
+contiene **5.125 cadenas distintas**, presentes en 80.324 registros físicos,
+incluidos 87 identificadores técnicos conservados. No son 80.324 frases diferentes.
 
 La traducción y las revisiones son asistidas por modelos; no se presentan como
 una revisión humana independiente.
@@ -31,10 +30,6 @@ una revisión humana independiente.
 | Logotipos y grandes rótulos de marca | Conservados |
 | Voces y pista de audio | Originales japoneses |
 | Partida completa de principio a fin | Pendiente |
-
-Una intervención inapropiada sobre un personaje menor se ha sustituido por
-una acotación neutra, conservando la reacción siguiente. Es una adaptación
-deliberada, no una traducción literal de esa intervención.
 
 ### Comprobaciones y límites
 
