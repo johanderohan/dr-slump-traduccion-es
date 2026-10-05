@@ -10,7 +10,7 @@ juego japonés, con sus dos pistas BIN y su archivo CUE.
 
 ## Estado
 
-Última versión: **[v1.0 — Traducción al castellano](../../releases/tag/v1.0)**.
+Última versión: **[v1.1 — Corrige la máquina de asignar botones](../../releases/tag/v1.1)**.
 
 El guion se ha traducido y cotejado con el japonés mediante una segunda
 revisión, con una biblia de voces, tratamientos, nombres y términos. El índice
@@ -33,7 +33,7 @@ una revisión humana independiente.
 
 ### Comprobaciones y límites
 
-Probado con **Beetle PSX 0.9.44.1 (82d8e05)**: arranque, diálogos iniciales,
+Probado con **Beetle PSX 0.9.44.1 (82d8e05)**: arranque, máquina de asignar botones, diálogos iniciales,
 desplazamiento, opciones, creación y sobrescritura de partidas, reinicio real
 y recuperación de la partida. Las pruebas dirigidas cubren fuentes, destinos,
 cuestionario, tienda de Suppaman, pruebas sonoras y las tres salidas de GAME OVER.
@@ -60,7 +60,7 @@ capítulo; el listado dentro del juego aparece en castellano.
 
 ## Cómo aplicar el parche
 
-1. Descarga **`dr-slump-es-v1.0.xdelta`** de **[Releases](../../releases/tag/v1.0)**.
+1. Descarga **`dr-slump-es-v1.1.xdelta`** de **[Releases](../../releases/tag/v1.1)**.
 2. Conserva una copia de los dos BIN y del CUE originales. Comprueba la pista
    de datos japonesa antes de aplicar el parche:
 
@@ -82,7 +82,7 @@ capítulo; el listado dentro del juego aparece en castellano.
    o ejecutar:
 
    ```bash
-   xdelta3 -d -s "Dr. Slump (Japan) (Track 1).bin" dr-slump-es-v1.0.xdelta "Dr. Slump (es-ES) (Track 1).bin"
+   xdelta3 -d -s "Dr. Slump (Japan) (Track 1).bin" dr-slump-es-v1.1.xdelta "Dr. Slump (es-ES) (Track 1).bin"
    ```
 
 4. Comprueba el resultado:
@@ -90,8 +90,9 @@ capítulo; el listado dentro del juego aparece en castellano.
    | Dato | Valor |
    |---|---|
    | Tamaño del BIN castellano | 65.825.424 bytes |
-   | SHA-256 del BIN castellano | `180c9ef92c29a836f325e3bba23cd8dbe8ec053e7aea0ebfbebc9f2bdd543246` |
-   | SHA-256 del parche | `c5063f4c655922d5a7c7aab46333324b14c110abd26511d983f7695baf50a4ad` |
+   | SHA-256 del BIN castellano | `efc49a6b94badafc5e87456f5833a8b95d76a011cae1eb4f44520da18aa167b3` |
+   | MD5 del BIN castellano | `985b7d86cd079365de7ddc4754a2e9ae` |
+   | SHA-256 del parche | `b625c644542cfcfca5f8091cfeff672cb6e2248d470e07e749ffaadcbe2d52fd` |
 
 5. Copia el CUE con un nombre nuevo y cambia **únicamente el primer `FILE`**
    para apuntar al BIN castellano. Mantén la segunda pista y los índices.
@@ -116,6 +117,23 @@ capítulo; el listado dentro del juego aparece en castellano.
 La pista de audio se conserva exacta: 37.396.800 bytes, SHA-256
 `ce5509fad13f6210656c9d29fb536b47abe5f824467177652c91b5c500470c77`.
 La comprobación de entrada del parche debe permanecer activada.
+
+## Cambios
+
+### v1.1 — 05-10-2026
+
+- Corregida la máquina de asignar botones de la habitación de Arale: ahora se
+  ven las cinco acciones con sus iconos y se puede salir con normalidad.
+- La ventana de la máquina se ensancha para los nombres en castellano; antes
+  «Puñetazo» se partía en dos líneas y desaparecían los demás iconos.
+- Corregido un desbordamiento de memoria del mismo menú que podía colgar el
+  juego al asignar botones con icono doble (L1, R1…).
+- El resto de la traducción no cambia. Aplica el parche nuevo sobre el Track 1
+  japonés original, no sobre un BIN ya parcheado con la v1.0.
+
+### v1.0 — 24-09-2026
+
+- Primera versión pública de la traducción al castellano.
 
 ## Créditos
 
