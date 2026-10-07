@@ -2,6 +2,8 @@
 
 [![Invítame a un café en Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/johanderohan)
 
+Ficha del proyecto, capturas y más traducciones al castellano en **[Parches en Castellano](https://parchesencastellano.com/traducciones/playstation/dr-slump)**.
+
 Traducción al **español de España**, realizada desde el japonés, de
 *Dr. Slump* para **PlayStation**, edición **SLPS-01934**.
 
