@@ -12,7 +12,7 @@ juego japonés, con sus dos pistas BIN y su archivo CUE.
 
 ## Estado
 
-Última versión: **[v1.1 — Corrige la máquina de asignar botones](../../releases/tag/v1.1)**.
+Última versión: **[v1.2 — Títulos de capítulo en castellano](../../releases/tag/v1.2)**.
 
 El guion se ha traducido y cotejado con el japonés mediante una segunda
 revisión, con una biblia de voces, tratamientos, nombres y términos. El índice
@@ -29,6 +29,7 @@ una revisión humana independiente.
 | Caracteres españoles | Tildes, diéresis, ñ, ¡ y ¿ en los cuatro estilos de letra |
 | Contraste de las fuentes | Paletas y sombras originales conservadas |
 | Pista de la tienda de Suppaman | Inscripción traducida en sus cinco apariciones |
+| Títulos de los capítulos | Traducidos en sus 19 copias |
 | Logotipos y grandes rótulos de marca | Conservados |
 | Voces y pista de audio | Originales japoneses |
 | Partida completa de principio a fin | Pendiente |
@@ -62,7 +63,7 @@ capítulo; el listado dentro del juego aparece en castellano.
 
 ## Cómo aplicar el parche
 
-1. Descarga **`dr-slump-es-v1.1.xdelta`** de **[Releases](../../releases/tag/v1.1)**.
+1. Descarga **`dr-slump-es-v1.2.xdelta`** de **[Releases](../../releases/tag/v1.2)**.
 2. Conserva una copia de los dos BIN y del CUE originales. Comprueba la pista
    de datos japonesa antes de aplicar el parche:
 
@@ -84,17 +85,17 @@ capítulo; el listado dentro del juego aparece en castellano.
    o ejecutar:
 
    ```bash
-   xdelta3 -d -s "Dr. Slump (Japan) (Track 1).bin" dr-slump-es-v1.1.xdelta "Dr. Slump (es-ES) (Track 1).bin"
+   xdelta3 -d -s "Dr. Slump (Japan) (Track 1).bin" dr-slump-es-v1.2.xdelta "Dr. Slump (es-ES) (Track 1).bin"
    ```
 
 4. Comprueba el resultado:
 
    | Dato | Valor |
    |---|---|
-   | Tamaño del BIN castellano | 65.825.424 bytes |
-   | SHA-256 del BIN castellano | `efc49a6b94badafc5e87456f5833a8b95d76a011cae1eb4f44520da18aa167b3` |
-   | MD5 del BIN castellano | `985b7d86cd079365de7ddc4754a2e9ae` |
-   | SHA-256 del parche | `b625c644542cfcfca5f8091cfeff672cb6e2248d470e07e749ffaadcbe2d52fd` |
+   | Tamaño del BIN castellano | 65.218.608 bytes |
+   | SHA-256 del BIN castellano | `86503d8d8c89d6090843ec2906e70d99c48e4330730703316bdb92d4a473d537` |
+   | MD5 del BIN castellano | `5550778d51e5002d32c81a72a1f43802` |
+   | SHA-256 del parche | `77e035bc874930fb15bc04328ca5e97c828f9ab79c1f1865cca57097df89a2f0` |
 
 5. Copia el CUE con un nombre nuevo y cambia **únicamente el primer `FILE`**
    para apuntar al BIN castellano. Mantén la segunda pista y los índices.
@@ -121,6 +122,14 @@ La pista de audio se conserva exacta: 37.396.800 bytes, SHA-256
 La comprobación de entrada del parche debe permanecer activada.
 
 ## Cambios
+
+### v1.2 — 22-10-2026
+
+- Traducidos los títulos de los capítulos que aparecen al empezar cada uno
+  («Capítulo 1 · ¡Ncha! ¡Nace Arale!», etc.), con el contorno y la sombra
+  originales. Gracias a quien nos avisó desde la web.
+- El resto de la traducción no cambia. Aplica el parche nuevo sobre el Track 1
+  japonés original; el BIN resultante es algo más pequeño que el de la v1.1.
 
 ### v1.1 — 05-10-2026
 
