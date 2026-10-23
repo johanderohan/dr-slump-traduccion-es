@@ -12,7 +12,7 @@ juego japonés, con sus dos pistas BIN y su archivo CUE.
 
 ## Estado
 
-Última versión: **[v1.2 — Títulos de capítulo en castellano](../../releases/tag/v1.2)**.
+Última versión: **[v1.3 — «Gran Premio de Villa del Pingüino»](../../releases/tag/v1.3)**.
 
 El guion se ha traducido y cotejado con el japonés mediante una segunda
 revisión, con una biblia de voces, tratamientos, nombres y términos. El índice
@@ -63,7 +63,7 @@ capítulo; el listado dentro del juego aparece en castellano.
 
 ## Cómo aplicar el parche
 
-1. Descarga **`dr-slump-es-v1.2.xdelta`** de **[Releases](../../releases/tag/v1.2)**.
+1. Descarga **`dr-slump-es-v1.3.xdelta`** de **[Releases](../../releases/tag/v1.3)**.
 2. Conserva una copia de los dos BIN y del CUE originales. Comprueba la pista
    de datos japonesa antes de aplicar el parche:
 
@@ -85,7 +85,7 @@ capítulo; el listado dentro del juego aparece en castellano.
    o ejecutar:
 
    ```bash
-   xdelta3 -d -s "Dr. Slump (Japan) (Track 1).bin" dr-slump-es-v1.2.xdelta "Dr. Slump (es-ES) (Track 1).bin"
+   xdelta3 -d -s "Dr. Slump (Japan) (Track 1).bin" dr-slump-es-v1.3.xdelta "Dr. Slump (es-ES) (Track 1).bin"
    ```
 
 4. Comprueba el resultado:
@@ -93,9 +93,9 @@ capítulo; el listado dentro del juego aparece en castellano.
    | Dato | Valor |
    |---|---|
    | Tamaño del BIN castellano | 65.218.608 bytes |
-   | SHA-256 del BIN castellano | `86503d8d8c89d6090843ec2906e70d99c48e4330730703316bdb92d4a473d537` |
-   | MD5 del BIN castellano | `5550778d51e5002d32c81a72a1f43802` |
-   | SHA-256 del parche | `77e035bc874930fb15bc04328ca5e97c828f9ab79c1f1865cca57097df89a2f0` |
+   | SHA-256 del BIN castellano | `34cefe6322c017b25a7ea2b510ee2336c5b141774db08bae00f60eeb5869c679` |
+   | MD5 del BIN castellano | `abf8d7ffbfad770b473ed1a8dad6fffe` |
+   | SHA-256 del parche | `7484f2dd8c4844cb39f4ab3e2af798f27dd00e8b41d5c5dab3b1afc8ebdf206e` |
 
 5. Copia el CUE con un nombre nuevo y cambia **únicamente el primer `FILE`**
    para apuntar al BIN castellano. Mantén la segunda pista y los índices.
@@ -122,6 +122,14 @@ La pista de audio se conserva exacta: 37.396.800 bytes, SHA-256
 La comprobación de entrada del parche debe permanecer activada.
 
 ## Cambios
+
+### v1.3 — 23-10-2026
+
+- El concurso del capítulo final pasa a llamarse «Gran Premio de Villa del
+  Pingüino» (antes «Premio al Buen Niño», demasiado literal). Gracias a quien
+  nos avisó desde la web tras terminar el juego.
+- El resto de la traducción no cambia. Aplica el parche nuevo sobre el Track 1
+  japonés original.
 
 ### v1.2 — 22-10-2026
 
